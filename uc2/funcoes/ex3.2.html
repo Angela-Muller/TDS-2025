@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3.2</title>
+</head>
+<body>
+    <script>
+        const desconto = (precoOriginal, descontoRoupa) =>{
+            return(precoOriginal - (precoOriginal * (descontoRoupa / 100)))
+        }
+        precoOriginal = 100
+        descontoRoupa = 15
+        precoComDesconto = desconto(precoOriginal, descontoRoupa)
+
+        alert("O Valor que deveria ser é " + precoComDesconto + ", Já o valor cobrado de mim foi " + precoOriginal)
+        // alerte(`Valor original: R$ ${precoOriginal} \n Valor com desconto de ${descontoRoupa}% é: R$ ${precoComDesconto}`)
+    </script>
+    <h1>ABSURDO!!!</h1>
+</body>
+</html>

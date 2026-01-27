@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+body{
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    text-align: center;
+    background: url('https://i.ytimg.com/vi/OqH9RoUNG24/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBr5mF-7XkKoe-Jsh_MDW4MxHdNXA') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    margin: 0;
+    padding: 20px;
+}
+/* Estilo do canvas */
+canvas{
+    background: black;
+    display: block;
+    margin: 20px auto;
+    border: 2px solid rgb(219, 255, 165);
+    box-shadow: 5px 0 10px rgb(219, 255, 165), -5px 0 10px rgb(219, 255, 165);
+}
+p{
+    background-color: black;
+    padding: 5px;
+    display: inline;
+    border-radius: 8px;
+    color: whitesmoke;
+    text-shadow: -2px -2px 5px rgb(219, 255, 165);
+}
+h1{
+    text-shadow: 5px 5px 5px rgb(219, 255, 165), -5px -5px 5px rgb(219, 255, 165);
+}

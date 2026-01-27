@@ -1,0 +1,88 @@
+/* Estiliza o corpo da página */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Fonte moderna */
+    background: linear-gradient(to right, #75dda4, #7e57c2); /* Gradiente azul-claro para roxo */
+    text-align: center; /* Centraliza tudo */
+    padding: 30px;
+    margin: 0;
+  }
+  
+  /* Título principal */
+  h1 {
+    color: #333;
+    margin-bottom: 40px;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px #75dda4, -2px -2px 5px #7e57c2 ;
+  }
+  
+  /* Container que posiciona os cards lado a lado */
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;           /* Permite quebrar linha em telas pequenas */
+    justify-content: center;   /* Centraliza os cards */
+    gap: 40px;                 /* Espaço entre os cards */
+  }
+  
+  /* Estilo base para cada card */
+  .card {
+    background-color: white;
+    border-radius: 15px;         /* Bordas arredondadas */
+    width: 250px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animações suaves */
+  }
+  
+  /* Efeito ao passar o mouse sobre o card */
+  .card:hover {
+    transform: translateY(-10px); /* Move o card para cima */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Aumenta a sombra */
+  }
+  
+  /* Card de Soft Skills: azul */
+  .card.soft {
+    border-top: 6px solid #9C27B0; /* Roxo */
+    box-shadow: 3px 3px 10px #7e57c2, -3px -3px 10px #7e57c2;
+  }
+  
+  /* Card de Hard Skills: roxo */
+  .card.hard {
+    border-top: 6px solid #018629; /* Azul */
+    box-shadow: 3px 3px 10px #75dda4, -3px -3px 10px #75dda4;
+  }
+  
+  /* Título dentro do card */
+  .card h2 {
+    color: #444;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização dos botões */
+  button {
+    background: linear-gradient(to left, #75dda4, #7e57c2); /* Gradiente azul-roxo */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1em;
+    cursor: pointer;
+   
+  }
+  
+  /* Efeito ao passar o mouse no botão */
+  button:hover {
+    background: linear-gradient(to left, #238842, #6a1b9a);
+  }
+  
+  /* Estilo das áreas de pergunta e resposta */
+  #pergunta, #resposta {
+    margin-top: 40px;
+    font-size: 1.2em;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 10px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }

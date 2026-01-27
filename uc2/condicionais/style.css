@@ -1,0 +1,18 @@
+body{
+    background-color: rgb(60, 71, 72);
+    color: rgb(232, 250, 221);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px;
+}
+h1{
+    text-align: center;
+    margin: 100px auto;
+}
+button{
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 10px auto;
+    background-color: rgb(232, 250, 221);
+    border-radius: 13px;
+}

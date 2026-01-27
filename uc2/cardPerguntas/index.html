@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas em cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <h1> ✌️😎 Escolha um tipo de habilidade: </h1>
+     <!-- Container com os dois cards -->
+     <div class="card-container">
+          <!-- Card para Soft Skills-->
+          <div class="card soft">
+           <h2>Soft Skills </h2>
+            <button onclick="mostrarPergunta('soft')">Ver Pergunta</button>
+          </div>
+          <!-- card hard skills -->
+         <div class="card hard">
+             <h2> Hard Skills</h2>
+             <button onclick="mostrarPergunta('hard')">Ver Pergunta</button>
+         </div> 
+     </div>
+     <!-- área onde será exibida a pergunta -->
+      <div id="pergunta"></div>
+      <!-- área onde será exibida a pergunta -->
+       <div id="resposta"></div>
+      <!-- Importando o js-->
+       <script src="script.js"></script>
+    
+    
+</body>
+</html>

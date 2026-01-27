@@ -1,0 +1,34 @@
+/*estilização geral do corpo da página*/
+body{
+    background-color: rgb(60, 71, 72); /* Cor de fundo da página */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* tipo de fonte */
+    color: aquamarine; /* mudo a cor do meu texto */
+    padding: 20px; /* espaçamento interno de 20 pixels (px) em todos os lados */
+}
+/* Estilo do título (h1) */
+h1{
+    text-align: center; /* centraliza o texto */
+    color: rgb(232, 250, 221); /* vai mudar só a cor do h1, os outros textos que podem ter não mudam */
+    margin: 40px;
+}
+/* Classe para botões personalizados */
+.botao{
+    display: block; /* Faz com que o botão se comporte como um bloco (ocupa uma largura disponível) */
+    width: 100%; /* nosso botão ocupa largura em 100% */
+    max-width: 400px; /* Largura máxima de 400px */
+    margin: 10px auto; /* Margem de 10px verticalmente e centralizado horizontal */
+    padding: 10px; /* espaçamento interno */
+    font-size: 16px; /* tamanho da minha fonte */
+    background-color: rgb(232, 250, 221);
+    color: rgb(60, 71, 72); /* cor do texto do botão*/
+    border: 2px solid rgb(0, 0, 0); /* 2px é a espessura da borda do botão, dotted (pontilada), double (duas linhas de borda), solid (linha sólida de borda) */
+    border-radius: 13px; /* Raio das bordas do botão */
+    cursor: pointer; /* Mostra o ponteiro do cursor como "mão" ao passar o mouse no botão */
+
+}
+/* Efeito de hover (muda a cor ao passar o mouse) */
+.botao:hover{
+    background-color:rgb(60, 71, 72);
+    color: rgb(232, 250, 221);
+    border: 2px solid rgb(232, 250, 221);
+}
