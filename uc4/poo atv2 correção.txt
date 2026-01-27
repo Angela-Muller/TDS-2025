@@ -1,0 +1,62 @@
+class Person {
+    public nome: string;
+    private idade: number;
+
+    constructor(nome: string, idade: number){
+        this.nome = nome;
+        this.idade = idade;
+    }
+    public fazerAniversario(): void{
+        this.idade += 1;
+    }
+    public mostrarIdade(){
+        console.log(`A idade de ${this.nome} é ${this.idade}`)
+    }
+}
+
+const person1 = new Person("Macuin", 26)
+const person2 = new Person("Kachau", 16)
+
+console.log(`-- CORREÇÃO --`)
+console.log(`-- EX 1 --`)
+person1.fazerAniversario();
+person1.mostrarIdade();
+console.log(`-------------------------`)
+person2.fazerAniversario();
+person2.mostrarIdade();
+
+class Cell {
+    private nivelBateria: number;
+
+    constructor() {
+        this.nivelBateria = 100;
+    }
+    public usar(): void{
+        if (this.nivelBateria <= 0) {
+            console.log("Bateria descarregada. Por favor carregue!");
+        }else {
+            this.nivelBateria -= 20;
+        }
+    }
+
+     public carregar(): void{
+        this.nivelBateria = 100
+    }
+
+    public mostrarBateria(): void{
+      console.log(`Nível de bateria: ${this.nivelBateria}%`);
+    }
+}
+
+const motorola = new Cell();
+
+console.log(`-- EX 2 --`)
+motorola.usar();
+motorola.mostrarBateria();
+motorola.usar();
+motorola.usar();
+motorola.usar();
+motorola.usar();
+motorola.usar();
+motorola.carregar();
+motorola.mostrarBateria();

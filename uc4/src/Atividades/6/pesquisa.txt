@@ -1,0 +1,3 @@
+A principal diferença entre uma interface e uma classe abstrata no TypeScript é que,Interface define apenas contrato (estrutura) de uma classe, Já a classe abstrata pode definir tanto a estrutura quanto parte da implementação.
+---
+Você deve escolher uma classe abstrata quando,Deseja compartilhar código comum entre várias classes.

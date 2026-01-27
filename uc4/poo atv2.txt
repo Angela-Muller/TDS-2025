@@ -1,0 +1,100 @@
+/* 
+1- a classe inteira se torna publica 
+2- private é somente acessível dentro dá própria classe, já o protected é acessível dentro dá própria classe e das filhas dela  
+3- Os dados pessoais da pessoas, como CPF, RG, entre outros dados pessoais, também 
+ */
+// pratica
+
+class Pessoa {
+    public nome: string;
+    private idade: number;
+    public sexo: string;
+
+    constructor(nome: string, idade: number, sexo: string){
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo
+    }
+    public fazerAniversario(): void{
+        this.idade += 1;
+        console.log(`${this.nome} fez aniversário agora ele tem ${this.idade}`)
+    }
+    public mostrarIdade(){
+        console.log(`A idade de ${this.nome} é ${this.idade}`)
+    }
+}
+
+const pessoa1 = new Pessoa("Menino novo", 26, "Masculino")
+const pessoa2 = new Pessoa("Messias", 15, "Masculino")
+const pessoa3 = new Pessoa("Kriptoniano", 16, "Masculino")
+
+pessoa1.fazerAniversario();
+pessoa2.fazerAniversario();
+pessoa3.fazerAniversario();
+
+pessoa1.mostrarIdade();
+pessoa2.mostrarIdade();
+pessoa3.mostrarIdade();
+
+class Celular {
+    private nivelBateria: number;
+    public marca: String;
+    public nomeDispositivo: string;
+
+    constructor(bateria: number, marca: string, nome: string) {
+        this.nivelBateria = bateria;
+        this.marca = marca
+        this.nomeDispositivo = nome
+    }
+
+    public carregar(){
+        if(this.nivelBateria = 100){
+            console.log(`Sua bateria está cheia!`)
+        }else if(this.nivelBateria < 50){
+            this.nivelBateria += 20
+            console.log(`Sua Bateria está com ${this.nivelBateria}%`)
+        } else if(this.nivelBateria > 20) {
+            this.nivelBateria += 25
+            console.log(`Sua Bateria está com ${this.nivelBateria}%`)
+        } else if(this.nivelBateria < 5){
+            this.nivelBateria += 10
+            console.log(`Sua bateria está perto de acabar, você está com ${this.nivelBateria}%`)
+        } else{
+            console.log(`Bateria descarregada!`)
+        }
+    }
+    public usar(){
+        if (this.nivelBateria <= 0) {
+            console.log("Bateria descarregada... Por favor, carregue o celular.");
+            return;
+        }
+        if (this.nivelBateria > 20) {
+            this.nivelBateria -= 5;
+        } else {
+            this.nivelBateria -= 2; 
+        }
+        if (this.nivelBateria < 0) this.nivelBateria = 0;
+        console.log(`Bateria descarregando: ${this.nivelBateria}%`);
+        if (this.nivelBateria < 25) {
+            console.log("Sua bateria está prestes a acabar!");
+        }
+    }
+    public mostrarbateria(){
+      console.log(`Smartphone ${this.nomeDispositivo} Bateria ${this.nivelBateria}%`);
+    }
+}
+
+const cell1 = new Celular(15, "Motorola","Edge 20 lite");
+const cell2 = new Celular(25, "Apple","iphone 16");
+const cell3 = new Celular(100,"Samsung","A25");
+
+cell1.usar();
+cell2.usar();
+cell3.usar();
+
+cell1.carregar();
+cell2.carregar();
+
+cell1.mostrarbateria();
+cell2.mostrarbateria();
+cell3.mostrarbateria();

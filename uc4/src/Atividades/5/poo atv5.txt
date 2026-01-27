@@ -1,0 +1,4 @@
+Pesquisa:
+    1)Classe Mãe escola com turma, curso, aluno
+    2)É a classe base e classe filha recebe
+    3)JAVA C# C++
