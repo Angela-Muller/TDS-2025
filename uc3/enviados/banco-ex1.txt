@@ -1,0 +1,14 @@
+1 - dado é o conteúdo bruto sem dizer o que é, a informação seria quando você diz sobre o que seria aquele conteúdo bruto, como Arthur, sem dizer o que é seria só um dado, mas dizendo let user = { nome: "Arthur",  //está dizendo que "Arthur" é o nome do user sendo assim ela é uma informação!
+
+2 - Para armazenar as informações, facilitando a consulta de dados, também facilitando a trabalhar com grandes volumes de informações e dados e também garantindo uma maior segurança de informações
+
+3 - Encontramos em nas tecnologias, como em app's de banco, lojas online, jogos online, etc... todos eles tem em comum o fato que precisa armazenar as informações do usuário e outros dados.
+
+4 - aluno(id, nome, data_nascimento)
+    curso(id, nome, carga_horaria)
+    um aluno pode se matricular em vários cursos (relacionamento N:N)
+    
+
+5 -  aluno(id, nome, data_nascimento, cpf) a chave primaria é o id
+     curso(id, nome, carga_horaria) a chave primaria é o id
+     matricula(nome_curso, cpf, id_curso) aqui tem a chave estrangeira, que seria o nome_curso, cpf, id_curso
