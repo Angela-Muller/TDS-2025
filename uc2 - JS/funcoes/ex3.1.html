@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3.1</title>
+</head>
+<body>
+    <script> 
+        function moedasTotais(pequenas, grandes){
+        return (Number(pequenas * 1)) + (Number(grandes * 5))
+        }
+        let pequenas = Number(prompt("Quantas moedas pequenas você achou?"))
+        let grandes = Number(prompt("Quantas moedas grandes você achou?"))
+
+        // Precisa puxar novamente a function
+        result =  moedasTotais(pequenas, grandes)
+        // Assim gerando o resultado
+
+        alert("A pontuação total é: " + result)
+    </script>
+</body>
+</html>

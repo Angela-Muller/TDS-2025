@@ -1,0 +1,21 @@
+body{
+    background-color: black;
+    color: whitesmoke;
+}
+h1{
+    text-align: center;
+    text-shadow: 3px 3px 10px green, -3px -3px 10px greenyellow;
+    margin: 15px;
+}
+button{
+    color: greenyellow;
+    text-align: center;
+    background-color: black;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: greenyellow;
+    
+}
+button.hover{
+    text-shadow: 10px 10px 700px white, -10px -10px 700px white,;
+}

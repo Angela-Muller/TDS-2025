@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+/* Aplicando uma configuração básica a todos os elementos */
+*{
+    box-sizing: border-box; /* Inclui bordas e padding no tamanho total do elemento */
+}
+body{
+    font-family: "Bitcount Grid Double", system-ui;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0,
+      "CRSV" 0.5,
+      "ELSH" 0,
+      "ELXP" 0;
+    background: linear-gradient(to top, #101414, rgb(60, 71, 72)); /* fundo com gradiente na diagonal (135deg) */
+    color: rgb(232, 250, 221); /* Cor clara para o texto */
+    display: flex; /* usa flexbox para o posicionamento */
+    flex-direction: column; /* organizar os filhos (elementos) em coluna */
+    align-items: center; /* centraliza horizontalmente */
+    justify-content: flex-start; /* Alinha os filhos (elementos) no topo da página */
+    min-height: 100vh; /* garante que o body ocupe pelo menos toda a altura da tela */
+    margin: 0; /* Remove as margens padrão do navegador */
+    padding: 2rem; /* Espaço interno nas bordas do body*/
+}
+/* estilo do título principal */
+h1{
+    margin-bottom: 1rem; /* rem= "root em" valor relativo ao tamanho de componentes em html */
+    text-shadow: -5px 0 5px rgb(25, 255, 121), 5px 5px 5px rgb(104, 4, 104); /* valores são as direções da sombra e cor */
+}
+/* container dos botões da escolha */
+.choices{
+    display: flex; /* Organiza os botões lado a lado */
+    gap: 1rem; /* Espaço entre os botões */
+    margin-bottom: 2rem; /* Espaço abaixo do container */
+}
+/* Estilos dos botões */ 
+button{
+    background: #ffffff22; /* fundo branco semi-transparente */
+    border: 2px solid #fff; /* borda branca sólida 2px é a espessura, solid é formato, e a cor */
+    border-radius: 12px; /* cantos arredondados */
+    padding: 1rem 2rem; /* espaçamento interno do botão */
+    font-size: 1.2rem; /* tamanho da fonte */
+    font-weight: 600;
+    color: #fff; /* Cor do texto branco */
+    cursor: pointer; /* mostrar a mãozinha ao passar o mouse */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Suavisa as mudanças visuais */
+    min-width: 100px; /* largura mínima */
+    box-shadow: 0 0 8px #000dff88;
+}
+button:hover{
+    transform: rotate(720deg);
+}
+/* estilo dos parágrafros de escolha */
+p{
+    font-size: 1.2rem;
+    margin: 0.5rem 0; /*margem acima e abaixo */
+    min-height: 1.5rem; /* Garante altura mínima para evitar "pulos" quando o texto muda */
+    text-align: center; /* Centraliza o texto */
+    text-shadow:  0 0 6px rgb(25, 255, 25); /* sombra para destacar o texto */
+}
+/* Estilo para o texto que mostra o vencedor */
+#winner{
+    font-weight: 700; /* negrito forte */
+    font-size: 1.5rem; /* fonte maior para destaque */
+    margin-top: 1.5rem; /* espaço acima do texto */
+    color: #fffa; /* branco com transparência */
+    text-shadow: 
+    -5 0 10px rgb(0, 255, 128), /* camada 1: brilho ciano suave */
+    5 5 15px rgb(255, 0, 170) /* camada 2: brilho mais intenso */
+    0 0 20px rgb(0, 255, 128); /* camada 3: brilho ainda mais forte */
+}

@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var Aluno_1 = require("./Aluno");
+var Professor_1 = require("./Professor");
+var Persona_1 = require("./Persona");
+var kal = new Aluno_1.Aluno("Kalleo", 16, Persona_1.Sexo.M);
+var Dal = new Professor_1.Professor("Dalvana", 25, Persona_1.Sexo.F);
+kal.apresentar();
+kal.estudar();
+console.log("------");
+Dal.apresentar();
+Dal.ensinar();

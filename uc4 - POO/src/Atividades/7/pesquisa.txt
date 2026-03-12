@@ -1,0 +1,4 @@
+1 ) - Substitui o comportamento de um método da superclasse.	
+    - Define múltiplas assinaturas para o mesmo método.  
+
+2)  - Não a suporte nativo.
